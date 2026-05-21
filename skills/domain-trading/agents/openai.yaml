@@ -1,0 +1,4 @@
+interface:
+  display_name: "Domain Trading"
+  short_description: "Run value-first stock research with timing overlays, important dates, annual report checks, and explicit downside framing"
+  default_prompt: "Use $domain-trading to separate value from timing, check important dates and annual report results, define the entry zone, and explain what would make the investment a mistake."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bootstrap"
+  short_description: "Start a session with public 6DuckLearn MCP, policy, and degraded-mode assumptions"
+  default_prompt: "Use $bootstrap at the start of a 6DuckLearn-guided session to check for hosted MCP context, load public policy assumptions, and continue safely in degraded mode if the cloud connection is unavailable."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "PKM Synthesis"
+  short_description: "Turn notes, saved research, and memory into themes, contradictions, carry-forward insights, and next actions"
+  default_prompt: "Use $pkm-synthesis to gather the smallest useful set of notes, cluster the themes, surface contradictions, and produce a synthesis that improves the next decision."

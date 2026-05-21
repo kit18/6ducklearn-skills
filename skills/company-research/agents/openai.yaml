@@ -1,0 +1,4 @@
+interface:
+  display_name: "Company Research"
+  short_description: "Evaluate a company with business quality, important dates, annual report results, downside risk, and value-first discipline"
+  default_prompt: "Use $company-research to analyze the business, check important dates, review annual report signals, separate value from timing, and explain what would make the investment a mistake."

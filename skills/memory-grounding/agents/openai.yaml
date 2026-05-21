@@ -1,0 +1,4 @@
+interface:
+  display_name: "Memory Grounding"
+  short_description: "Ground work in the smallest useful set of 6DuckLearn memory and PKM context"
+  default_prompt: "Use $memory-grounding to retrieve only the most relevant 6DuckLearn memory context, then label what supports, conflicts with, or leaves the task inconclusive."

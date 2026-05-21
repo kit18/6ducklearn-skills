@@ -1,0 +1,4 @@
+interface:
+  display_name: "Video Agent"
+  short_description: "Create viral hook packages, scripts, storyboards, shot lists, and video prompt packs from user-supplied elements"
+  default_prompt: "Use $video-studio for short-form hooks, scripts, shot lists, storyboards, photo/element assembly plans, and video prompts. Require approval before paid/external rendering."

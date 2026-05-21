@@ -1,0 +1,4 @@
+interface:
+  display_name: "Domain Product Research"
+  short_description: "Map product wedge, competitors, moat, and risks using 6DuckLearn data and explicit evidence lanes"
+  default_prompt: "Use $domain-product-research to answer a product or company question with a disciplined evidence map, competitor view, moat analysis, and a clear recommendation."

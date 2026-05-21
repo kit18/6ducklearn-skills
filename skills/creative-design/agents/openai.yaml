@@ -1,0 +1,4 @@
+interface:
+  display_name: "Creative Agent"
+  short_description: "Create visual briefs, art direction, and image prompt packs for social and product assets"
+  default_prompt: "Use $creative-design for social graphics, product visuals, art direction, and image-generation prompt packs. Keep generated prompts as drafts and require approval before paid/external rendering."

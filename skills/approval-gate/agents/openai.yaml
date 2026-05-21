@@ -1,0 +1,4 @@
+interface:
+  display_name: "Approval Gate"
+  short_description: "Apply 6DuckLearn approval policy before actions that need confirmation or external access"
+  default_prompt: "Use $approval-gate to classify the action, check the cloud policy, and make the approval boundary explicit before executing."

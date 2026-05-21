@@ -1,0 +1,25 @@
+{
+  "name": "@6ducklearn/skills",
+  "version": "0.1.0",
+  "description": "Curated public 6DuckLearn skills for research, PKM synthesis, go-to-market, and creative workflows.",
+  "type": "module",
+  "private": false,
+  "license": "Apache-2.0",
+  "scripts": {
+    "validate": "node scripts/validate-skills.mjs",
+    "scan:secrets": "node scripts/validate-skills.mjs",
+    "test": "node scripts/validate-skills.mjs"
+  },
+  "keywords": [
+    "6ducklearn",
+    "skills",
+    "agents",
+    "mcp",
+    "research",
+    "pkm"
+  ],
+  "engines": {
+    "node": ">=20"
+  }
+}
+
