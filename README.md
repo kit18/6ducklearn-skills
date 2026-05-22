@@ -2,13 +2,14 @@
 
 Curated public 6DuckLearn skills for agent workflows.
 
-This repository contains reusable skill instructions for research, PKM synthesis, go-to-market planning, creative direction, video planning, memory grounding, approval gating, and degraded-mode 6DuckLearn bootstrap.
+This repository contains reusable skill instructions for research, PKM synthesis, go-to-market planning, daily growth-route reviews, creative direction, video planning, memory grounding, approval gating, and degraded-mode 6DuckLearn bootstrap.
 
 It is intentionally not a dump of the private 6DuckLearn SaaS platform. The hosted product keeps user memory, private PKM, approvals, billing, runtime health, OAuth grants, and production tool execution on `https://6ducklearn.com`.
 
 ## Included Skills
 
 - `company-research`
+- `daily-growth-routes`
 - `domain-product-research`
 - `domain-trading`
 - `go-to-market`
@@ -66,4 +67,3 @@ Validation checks skill frontmatter, referenced local files, excluded private sk
 ## License
 
 Validation scripts are Apache-2.0. Skill text, references, and docs are CC BY 4.0. See [TRADEMARK.md](./TRADEMARK.md) for 6DuckLearn brand usage.
-

@@ -8,6 +8,7 @@ const expectedSkills = new Set([
   'bootstrap',
   'company-research',
   'creative-design',
+  'daily-growth-routes',
   'domain-product-research',
   'domain-trading',
   'go-to-market',
