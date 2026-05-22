@@ -1,4 +1,0 @@
-interface:
-  display_name: "Daily Growth Routes"
-  short_description: "Create draft-only AI/RSS community posts and Skill + Codex workflow demos with evidence and approval gates"
-  default_prompt: "Use $daily-growth-routes for private draft-only 6DuckLearn growth reviews across AI/RSS community scouting and Skill + Codex workflow demos. Include claim ledgers, approval status, and 7-day learning metrics; do not publish or send externally."
