@@ -1,7 +1,7 @@
 {
   "name": "@6ducklearn/skills",
-  "version": "0.1.0",
-  "description": "Curated public 6DuckLearn skills for research, PKM synthesis, go-to-market, and creative workflows.",
+  "version": "0.1.1",
+  "description": "Curated public 6DuckLearn skills for research, PKM synthesis, go-to-market, daily growth routes, and creative workflows.",
   "type": "module",
   "private": false,
   "license": "Apache-2.0",
@@ -22,4 +22,3 @@
     "node": ">=20"
   }
 }
-
