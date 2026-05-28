@@ -15,7 +15,7 @@ const expectedSkills = new Set([
   'pkm-synthesis',
   'video-studio',
 ]);
-const forbiddenSkills = new Set(['session-publish']);
+const forbiddenSkills = new Set(['daily-growth-routes', 'session-publish']);
 
 const serviceRoleName = 'SUPABASE_' + 'SERVICE_ROLE_KEY';
 const privateProjectRef = 'fqhjwdrnllsobj' + 'xiygky';

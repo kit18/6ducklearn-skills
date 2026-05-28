@@ -19,7 +19,13 @@ It is intentionally not a dump of the private 6DuckLearn SaaS platform. The host
 - `approval-gate`
 - `bootstrap`
 
-`session-publish` is not included in v0.1 because publishing back to 6DuckLearn requires OAuth, policy checks, and explicit user approval.
+## Curated But Not Included Here
+
+The public GitHub pack is intentionally smaller than the internal Skill Builder curated set. It includes only skills that are safe to run without private 6DuckLearn product state.
+
+- `daily-growth-routes` stays private/local because it produces approval-required growth drafts, community distribution plans, live-route checks, and learning metrics that depend on internal review boundaries.
+- `session-publish` is not included because publishing back to 6DuckLearn requires OAuth, policy checks, and explicit user approval.
+- `strategic-situation-analysis` is published separately in the [6DuckLearn Sunzi Strategy Stack](https://github.com/kit18/6ducklearn-sunzi-stack) with its own references, examples, and validation suite.
 
 ## Optional MCP Setup
 
