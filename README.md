@@ -19,6 +19,29 @@ It is intentionally not a dump of the private 6DuckLearn SaaS platform. The host
 - `approval-gate`
 - `bootstrap`
 
+## Install From npm
+
+This repository is configured for the public npm registry as `@6ducklearn/skills`.
+After a version is published, install it with:
+
+```bash
+npm install @6ducklearn/skills
+```
+
+The package ships Markdown skill instructions and reference assets. For example:
+
+```text
+node_modules/@6ducklearn/skills/skills/go-to-market/SKILL.md
+node_modules/@6ducklearn/skills/skills/pkm-synthesis/SKILL.md
+node_modules/@6ducklearn/skills/templates/6ducklearn.mcp.json.template
+```
+
+Validate the installed package contents with:
+
+```bash
+npm explore @6ducklearn/skills -- npm test
+```
+
 ## Curated But Not Included Here
 
 The public GitHub pack is intentionally smaller than the internal Skill Builder curated set. It includes only skills that are safe to run without private 6DuckLearn product state.
@@ -68,6 +91,22 @@ npm test
 ```
 
 Validation checks skill frontmatter, referenced local files, excluded private skills, and public-release leakage patterns.
+
+## Publish
+
+Maintainers can publish the package through GitHub Actions after adding an `NPM_TOKEN` repository secret with publish access for the `@6ducklearn` scope. The `Publish npm package` workflow runs validation and `npm pack --dry-run` before publishing with npm provenance.
+
+For a local release check:
+
+```bash
+npm run release:check
+```
+
+For a direct npm publish from an authenticated maintainer machine:
+
+```bash
+npm publish --access public
+```
 
 ## License
 

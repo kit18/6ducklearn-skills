@@ -1,14 +1,37 @@
 {
   "name": "@6ducklearn/skills",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Curated public 6DuckLearn skills for research, PKM synthesis, go-to-market, and creative workflows.",
   "type": "module",
   "private": false,
   "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kit18/6ducklearn-skills.git"
+  },
+  "homepage": "https://github.com/kit18/6ducklearn-skills#readme",
+  "bugs": {
+    "url": "https://github.com/kit18/6ducklearn-skills/issues"
+  },
+  "files": [
+    "skills/",
+    "references/",
+    "templates/",
+    "scripts/validate-skills.mjs",
+    "README.md",
+    "LICENSE",
+    "LICENSE-CONTENT",
+    "NOTICE",
+    "SECURITY.md",
+    "TRADEMARK.md"
+  ],
   "scripts": {
     "validate": "node scripts/validate-skills.mjs",
     "scan:secrets": "node scripts/validate-skills.mjs",
-    "test": "node scripts/validate-skills.mjs"
+    "test": "node scripts/validate-skills.mjs",
+    "pack:dry-run": "npm pack --dry-run",
+    "release:check": "npm test && npm pack --dry-run",
+    "prepublishOnly": "npm test"
   },
   "keywords": [
     "6ducklearn",
@@ -20,5 +43,9 @@
   ],
   "engines": {
     "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }

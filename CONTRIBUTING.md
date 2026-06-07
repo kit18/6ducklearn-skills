@@ -21,3 +21,10 @@ Run validation before opening a pull request:
 npm test
 ```
 
+Before publishing a new npm version, run:
+
+```bash
+npm run release:check
+```
+
+Publishing requires either an authenticated npm maintainer session or the repository `NPM_TOKEN` secret used by the GitHub Actions publish workflow.
