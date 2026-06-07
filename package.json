@@ -5,6 +5,9 @@
   "type": "module",
   "private": false,
   "license": "Apache-2.0",
+  "bin": {
+    "6ducklearn-skills": "./scripts/6ducklearn-skills.mjs"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kit18/6ducklearn-skills.git"
@@ -17,6 +20,7 @@
     "skills/",
     "references/",
     "templates/",
+    "scripts/6ducklearn-skills.mjs",
     "scripts/validate-skills.mjs",
     "README.md",
     "LICENSE",

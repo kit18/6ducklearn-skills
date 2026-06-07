@@ -42,6 +42,22 @@ Validate the installed package contents with:
 npm explore @6ducklearn/skills -- npm test
 ```
 
+## Install From GitHub
+
+Until the npm package is published, install directly from GitHub:
+
+```bash
+npm install github:kit18/6ducklearn-skills
+```
+
+To install the public skills into local Codex as namespaced skills, run:
+
+```bash
+npx github:kit18/6ducklearn-skills install-codex
+```
+
+This copies the skills to `~/.codex/skills` with names like `6ducklearn-go-to-market` and `6ducklearn-company-research`, avoiding collisions with other local skills. Restart Codex to refresh the available skill list if needed.
+
 ## Curated But Not Included Here
 
 The public GitHub pack is intentionally smaller than the internal Skill Builder curated set. It includes only skills that are safe to run without private 6DuckLearn product state.
