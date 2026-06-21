@@ -12,6 +12,7 @@ const expectedSkills = new Set([
   'domain-trading',
   'go-to-market',
   'memory-grounding',
+  'presentation-orchestrator',
   'pkm-synthesis',
   'video-studio',
 ]);

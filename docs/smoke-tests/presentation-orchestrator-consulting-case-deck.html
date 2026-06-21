@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Consulting Case Smoke Test Deck</title>
+  <style>
+    :root {
+      --ink: #172026;
+      --muted: #65727d;
+      --line: #d8dee4;
+      --paper: #f5f7f4;
+      --white: #ffffff;
+      --teal: #0f766e;
+      --blue: #255c99;
+      --gold: #b67b20;
+      --rose: #a14b5f;
+      --green: #2f855a;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      overflow-x: hidden;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.34;
+    }
+
+    main {
+      display: grid;
+      gap: 24px;
+      padding: 24px;
+    }
+
+    .slide {
+      min-height: calc(100vh - 48px);
+      width: 100%;
+      overflow: hidden;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      padding: 44px 52px 32px;
+      background: var(--white);
+      border: 1px solid var(--line);
+      box-shadow: 0 18px 60px rgba(23, 32, 38, 0.08);
+      page-break-after: always;
+    }
+
+    .eyebrow {
+      color: var(--teal);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    h1, h2 {
+      margin: 10px 0 0;
+      line-height: 1.05;
+      letter-spacing: 0;
+      overflow-wrap: anywhere;
+    }
+
+    h1 {
+      max-width: 1040px;
+      font-size: 56px;
+    }
+
+    h2 {
+      max-width: 1040px;
+      font-size: 42px;
+    }
+
+    p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 20px;
+      overflow-wrap: anywhere;
+    }
+
+    .body {
+      align-content: center;
+      display: grid;
+      gap: 24px;
+      margin-top: 24px;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(320px, 0.86fr);
+      gap: 28px;
+      align-items: center;
+    }
+
+    .cards, .three-col {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .two-card {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      min-width: 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+      background: #fbfcfa;
+    }
+
+    .card strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 18px;
+    }
+
+    .card span, li {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .tag {
+      display: inline-flex;
+      width: fit-content;
+      align-items: center;
+      border-radius: 999px;
+      padding: 5px 10px;
+      margin-bottom: 12px;
+      color: var(--teal);
+      background: #e7f3ef;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .pov {
+      border-left: 6px solid var(--teal);
+      background: #eef8f5;
+      padding: 24px;
+      border-radius: 8px;
+    }
+
+    .pov strong {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+
+    .cascade {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .cascade .card {
+      border-top: 5px solid var(--blue);
+      min-height: 160px;
+    }
+
+    .tree {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .trunk {
+      display: grid;
+      place-items: center;
+      border-radius: 8px;
+      padding: 20px;
+      color: white;
+      background: var(--ink);
+      font-weight: 850;
+      font-size: 24px;
+      text-align: center;
+    }
+
+    .branches {
+      display: grid;
+      gap: 12px;
+    }
+
+    .branch {
+      border-left: 5px solid var(--gold);
+      border-radius: 8px;
+      padding: 16px;
+      background: #fbfcfa;
+      border-top: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 16px;
+    }
+
+    th, td {
+      padding: 12px 10px;
+      text-align: left;
+      vertical-align: top;
+      border-bottom: 1px solid var(--line);
+    }
+
+    th {
+      color: var(--ink);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    .recommend {
+      color: var(--green);
+      font-weight: 850;
+    }
+
+    .reject {
+      color: var(--rose);
+      font-weight: 850;
+    }
+
+    .roadmap {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .roadmap .card {
+      min-height: 210px;
+      border-top: 5px solid var(--teal);
+    }
+
+    .risk-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .risk-grid .card {
+      border-left: 5px solid var(--rose);
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      padding-top: 16px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 820px) {
+      main {
+        padding: 10px;
+        gap: 12px;
+      }
+
+      .slide {
+        min-height: auto;
+        max-width: 100%;
+        padding: 28px 22px 20px;
+      }
+
+      h1 { font-size: 38px; }
+      h2 { font-size: 30px; }
+      p { font-size: 17px; }
+
+      .two-col, .cards, .three-col, .two-card, .cascade, .tree, .roadmap, .risk-grid {
+        grid-template-columns: 1fr;
+      }
+
+      table {
+        display: block;
+        max-width: 100%;
+        overflow-x: auto;
+      }
+
+      th, td {
+        min-width: 150px;
+        overflow-wrap: anywhere;
+      }
+    }
+
+    @media print {
+      body { background: white; }
+      main { display: block; padding: 0; }
+      .slide { min-height: 100vh; box-shadow: none; border: 0; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="slide">
+      <header>
+        <div class="eyebrow">Consulting case smoke test</div>
+        <h1>Approve a 90-day healthcare vertical GTM test, not a pivot</h1>
+      </header>
+      <div class="body two-col">
+        <p>A synthetic B2B SaaS case tests whether the skill can turn messy source notes into a consulting POV, selected frameworks, evidence gaps, red-team review, final simulation validation, and slide-ready recommendation.</p>
+        <div class="pov">
+          <strong>Decision ask</strong>
+          <p>Approve a scoped test team, gates, and first customer-discovery sprint before building vertical collateral.</p>
+        </div>
+      </div>
+      <footer><span>presentation-orchestrator consulting case</span><span>1</span></footer>
+    </section>
+
+    <section class="slide">
+      <header>
+        <div class="eyebrow">Route card</div>
+        <h2>The right route is an uncertain hypothesis with an options tradeoff</h2>
+      </header>
+      <div class="body cards">
+        <div class="card"><span class="tag">Decision job</span><strong>Growth/GTM investment</strong><span>Approve, reject, or scope a vertical GTM test.</span></div>
+        <div class="card"><span class="tag">Answer state</span><strong>Uncertain hypothesis</strong><span>Healthcare urgency is directional, not proven.</span></div>
+        <div class="card"><span class="tag">Primary framework</span><strong>Playing to Win</strong><span>Where to play, how to win, and what to test.</span></div>
+      </div>
+      <footer><span>Harness stage: route card</span><span>2</span></footer>
+    </section>
+
+    <section class="slide">
+      <header>
+        <div class="eyebrow">Consulting POV</div>
+        <h2>Healthcare is a focused test candidate, not a proven pivot</h2>
+      </header>
+      <div class="body two-card">
+        <div class="pov">
+          <strong>Recommendation</strong>
+          <p>Run a 90-day healthcare operations vertical GTM test with explicit stop/scale gates.</p>
+        </div>
+        <div class="card"><span class="tag">Why now</span><strong>Growth slowed while one vertical shows urgency</strong><span>The test validates urgency, repeatability, channel focus, compliance load, and implementation burden.</span></div>
+      </div>
+      <footer><span>Harness stage: POV card</span><span>3</span></footer>
+    </section>
+
+    <section class="slide">
+      <header>
+        <div class="eyebrow">Issue tree</div>
+        <h2>The slowdown should be decomposed before the team commits to a vertical motion</h2>
+      </header>
+      <div class="body tree">
+        <div class="trunk">Why is growth slowing, and where can focus improve quality?</div>
+        <div class="branches">
+          <div class="branch"><strong>Demand quality</strong><br><span>Are healthcare pains more urgent and repeatable?</span></div>
+          <div class="branch"><strong>Sales motion</strong><br><span>Does vertical focus improve conversion or shorten cycles?</span></div>
+          <div class="branch"><strong>Delivery burden</strong><br><span>Do compliance and implementation requirements change economics?</span></div>
+        </div>
+      </div>
+      <footer><span>Support method: issue tree / MECE</span><span>4</span></footer>
+    </section>
+
+    <section class="slide">
+      <header>
+        <div class="eyebrow">Strategy cascade</div>
+        <h2>The test must prove where to play and how to win before repositioning</h2>
+      </header>
+      <div class="body cascade">
+        <div class="card"><strong>Aspiration</strong><span>Improve sales efficiency with sharper segment focus.</span></div>
+        <div class="card"><strong>Where to play</strong><span>Healthcare operations buyers in mid-market accounts.</span></div>
+        <div class="card"><strong>How to win</strong><span>Workflow urgency plus repeatable implementation path.</span></div>
+        <div class="card"><strong>Capabilities</strong><span>Discovery, compliance triage, vertical messaging.</span></div>
+        <div class="card"><strong>Systems</strong><span>Test gates, CRM tags, learning review cadence.</span></div>
+      </div>
+      <footer><span>Primary framework: Playing to Win</span><span>5</span></footer>
+    </section>
+
+    <section class="slide">
+      <header>
+        <div class="eyebrow">Options considered</div>
+        <h2>A scoped vertical test beats both horizontal-only optimization and a full pivot</h2>
+      </header>
+      <div class="body">
+        <table>
+          <thead><tr><th>Option</th><th>Case for</th><th>Case against</th><th>Decision</th></tr></thead>
+          <tbody>
+            <tr><td>Optimize horizontal</td><td>Avoids distraction</td><td>Ignores urgency signal</td><td class="reject">Reject as sole path</td></tr>
+            <tr><td>90-day vertical test</td><td>Validates focus with bounded risk</td><td>Needs discipline and gates</td><td class="recommend">Recommend</td></tr>
+            <tr><td>Full healthcare pivot</td><td>Maximum focus</td><td>Evidence too thin</td><td class="reject">Reject</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <footer><span>Slide archetype: option comparison</span><span>6</span></footer>
+    </section>
+
+    <section class="slide">
+      <header>
+        <div class="eyebrow">Evidence discipline</div>
+        <h2>Evidence is directional, so the deck preserves gaps instead of pretending certainty</h2>
+      </header>
+      <div class="body">
+        <table>
+          <thead><tr><th>Claim</th><th>Source type</th><th>Confidence</th><th>Gap</th></tr></thead>
+          <tbody>
+            <tr><td>Horizontal growth is slowing</td><td>User-provided synthetic fixture</td><td>Medium</td><td>Quantify pipeline, win rate, cycle trend</td></tr>
+            <tr><td>Healthcare urgency appears higher</td><td>User-provided synthetic fixture</td><td>Low-medium</td><td>Count calls and classify pain intensity</td></tr>
+            <tr><td>Full pivot is premature</td><td>Inference from thin evidence</td><td>Medium</td><td>Validate segment economics and compliance load</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <footer><span>Harness stage: evidence ledger</span><span>7</span></footer>
+    </section>
+
+    <section class="slide">
+      <header>
+        <div class="eyebrow">90-day test design</div>
+        <h2>The test should use scale/stop gates before permanent repositioning</h2>
+      </header>
+      <div class="body roadmap">
+        <div class="card"><span class="tag">Weeks 1-2</span><strong>Discovery gate</strong><span>Validate repeatable pain and compliance blockers.</span></div>
+        <div class="card"><span class="tag">Weeks 3-6</span><strong>Message/channel gate</strong><span>Test vertical messaging and targeted outbound quality.</span></div>
+        <div class="card"><span class="tag">Weeks 7-12</span><strong>Scale/stop gate</strong><span>Compare conversion quality, cycle length, and implementation load.</span></div>
+      </div>
+      <footer><span>Support method: Traction/Bullseye</span><span>8</span></footer>
+    </section>
+
+    <section class="slide">
+      <header>
+        <div class="eyebrow">Red-team review</div>
+        <h2>The strongest objections are compliance ambiguity, product distraction, and small-sample bias</h2>
+      </header>
+      <div class="body risk-grid">
+        <div class="card"><strong>Unsupported market size</strong><span>Remove any TAM/SAM claim until evidence exists.</span></div>
+        <div class="card"><strong>Small sample bias</strong><span>Label urgency as hypothesis and require call-count validation.</span></div>
+        <div class="card"><strong>Execution capacity</strong><span>Scope the test team and avoid broad product commitments.</span></div>
+        <div class="card"><strong>Compliance risk</strong><span>Make compliance discovery the first gate.</span></div>
+      </div>
+      <footer><span>Harness stage: red-team review</span><span>9</span></footer>
+    </section>
+
+    <section class="slide">
+      <header>
+        <div class="eyebrow">Final simulation validation</div>
+        <h2>The simulated decision room passes only if owners, gates, and proof gaps are explicit</h2>
+      </header>
+      <div class="body risk-grid">
+        <div class="card"><strong>Sponsor</strong><span>Pass after the ask is narrowed to test team, gates, and first discovery sprint.</span></div>
+        <div class="card"><strong>Skeptical executive</strong><span>Pass after horizontal optimization remains visible as a rejected sole path.</span></div>
+        <div class="card"><strong>Execution owner</strong><span>Fails until Monday actions, owners, and stop/scale gates are named.</span></div>
+        <div class="card"><strong>Evidence reviewer</strong><span>Pass only if healthcare urgency stays labeled as a hypothesis, not proof.</span></div>
+      </div>
+      <footer><span>Harness stage: final simulation validation</span><span>10</span></footer>
+    </section>
+
+    <section class="slide">
+      <header>
+        <div class="eyebrow">Revised recommendation</div>
+        <h2>Approve the test, but keep the recommendation reversible until the gates are met</h2>
+      </header>
+      <div class="body two-col">
+        <div class="pov">
+          <strong>Final ask</strong>
+          <p>Approve a 90-day healthcare operations test with a two-week discovery sprint, named owners, evidence gates, and no permanent repositioning until scale criteria are met.</p>
+        </div>
+        <div class="card"><span class="tag">What changed</span><strong>The red-team removed false certainty</strong><span>No market-size, conversion, or customer-proof claims remain without evidence.</span></div>
+      </div>
+      <footer><span>Harness stage: revised output</span><span>11</span></footer>
+    </section>
+  </main>
+</body>
+</html>
