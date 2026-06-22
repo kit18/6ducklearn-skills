@@ -1,6 +1,6 @@
 {
   "name": "@6ducklearn/skills",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Curated public 6DuckLearn skills for research, PKM synthesis, go-to-market, consulting presentations, and creative workflows.",
   "type": "module",
   "private": false,
@@ -21,6 +21,7 @@
     "references/",
     "templates/",
     "scripts/6ducklearn-skills.mjs",
+    "scripts/smoke-github-installer.mjs",
     "scripts/validate-skills.mjs",
     "README.md",
     "LICENSE",
@@ -30,9 +31,9 @@
     "TRADEMARK.md"
   ],
   "scripts": {
-    "validate": "node scripts/validate-skills.mjs",
+    "validate": "npm test",
     "scan:secrets": "node scripts/validate-skills.mjs",
-    "test": "node scripts/validate-skills.mjs",
+    "test": "node scripts/validate-skills.mjs && node scripts/smoke-github-installer.mjs",
     "pack:dry-run": "npm pack --dry-run",
     "release:check": "npm test && npm pack --dry-run",
     "prepublishOnly": "npm test"

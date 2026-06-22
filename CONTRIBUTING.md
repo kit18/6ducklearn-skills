@@ -21,10 +21,12 @@ Run validation before opening a pull request:
 npm test
 ```
 
-Before publishing a new npm version, run:
+Validation includes skill checks plus a temporary Codex install smoke for the GitHub `npx` installer.
+
+GitHub is the primary production surface. Before pushing a public release, run:
 
 ```bash
 npm run release:check
 ```
 
-Publishing requires either an authenticated npm maintainer session or the repository `NPM_TOKEN` secret used by the GitHub Actions publish workflow.
+npm publication is optional and should be triggered manually only when package-manager distribution is needed. Prefer npm Trusted Publishing/OIDC after the package exists. If a bootstrap token is needed, use a short-lived granular token, store it only as a GitHub secret, and revoke it after use.

@@ -20,44 +20,44 @@ It is intentionally not a dump of the private 6DuckLearn SaaS platform. The host
 - `approval-gate`
 - `bootstrap`
 
-## Install From npm
+## Primary Install From GitHub
 
-This repository is configured for the public npm registry as `@6ducklearn/skills`.
-After a version is published, install it with:
-
-```bash
-npm install @6ducklearn/skills
-```
-
-The package ships Markdown skill instructions and reference assets. For example:
-
-```text
-node_modules/@6ducklearn/skills/skills/go-to-market/SKILL.md
-node_modules/@6ducklearn/skills/skills/pkm-synthesis/SKILL.md
-node_modules/@6ducklearn/skills/templates/6ducklearn.mcp.json.template
-```
-
-Validate the installed package contents with:
+GitHub is the primary distribution path for these public skills. To install the current public skills into local Codex as namespaced skills, run:
 
 ```bash
-npm explore @6ducklearn/skills -- npm test
+npx --yes github:kit18/6ducklearn-skills install-codex
 ```
 
-## Install From GitHub
+This copies the skills to `~/.codex/skills` with names like `6ducklearn-go-to-market`, `6ducklearn-presentation-orchestrator`, and `6ducklearn-company-research`, avoiding collisions with other local skills. Restart Codex to refresh the available skill list if needed.
 
-Until the npm package is published, install directly from GitHub:
+To preview the skills that will install:
+
+```bash
+npx --yes github:kit18/6ducklearn-skills list
+```
+
+Advanced options:
+
+```bash
+npx --yes github:kit18/6ducklearn-skills install-codex --target ~/.codex/skills --prefix 6ducklearn-
+```
+
+You can also add the GitHub package to a Node project:
 
 ```bash
 npm install github:kit18/6ducklearn-skills
 ```
 
-To install the public skills into local Codex as namespaced skills, run:
+## Optional npm Package
+
+The package is also configured for the public npm registry as `@6ducklearn/skills`, but npm is optional. Use npm when you need package-manager distribution, version pinning, or registry provenance. GitHub remains the primary install path for Codex.
+
+After an npm version is published, install it with:
 
 ```bash
-npx github:kit18/6ducklearn-skills install-codex
+npm install @6ducklearn/skills
+npx --yes @6ducklearn/skills install-codex
 ```
-
-This copies the skills to `~/.codex/skills` with names like `6ducklearn-go-to-market` and `6ducklearn-company-research`, avoiding collisions with other local skills. Restart Codex to refresh the available skill list if needed.
 
 ## Curated But Not Included Here
 
@@ -107,11 +107,11 @@ Public skills may not:
 npm test
 ```
 
-Validation checks skill frontmatter, referenced local files, excluded private skills, and public-release leakage patterns.
+Validation checks skill frontmatter, referenced local files, excluded private skills, public-release leakage patterns, and the GitHub `npx` installer behavior.
 
 ## Publish
 
-Maintainers can publish the package through GitHub Actions after adding an `NPM_TOKEN` repository secret with publish access for the `@6ducklearn` scope. The `Publish npm package` workflow runs validation and `npm pack --dry-run` before publishing with npm provenance.
+The primary production surface is GitHub `main` plus GitHub releases. Validate first, then push to `origin/main`.
 
 For a local release check:
 
@@ -119,7 +119,9 @@ For a local release check:
 npm run release:check
 ```
 
-For a direct npm publish from an authenticated maintainer machine:
+npm publication is optional and manual. Prefer npm Trusted Publishing/OIDC after the package exists; otherwise use a short-lived granular npm token only for the bootstrap publish, then revoke it. The `Publish npm package` workflow is intentionally manual so GitHub releases do not require npm credentials.
+
+For a direct npm publish from an authenticated maintainer machine, if needed:
 
 ```bash
 npm publish --access public
