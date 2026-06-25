@@ -7,7 +7,7 @@ Use this reference after intake. Route by consulting decision state first, then 
 | Decision state | Primary method | Support methods | Best output |
 |---|---|---|---|
 | Known recommendation | Pyramid Principle | Decision memo, evidence ledger | Answer-first executive decision deck |
-| Uncertain hypothesis | Bulletproof Problem Solving | Issue tree, MECE, workplan | Problem-solving deck with tested options |
+| Uncertain hypothesis | McKinsey problem-solving spine | Issue tree, MECE, Bulletproof Problem Solving workplan | Problem-solving deck with tested options |
 | Options tradeoff | Option comparison | Decision table, risk/return, sensitivity | Recommendation deck with rejected paths |
 | Strategy/framework diagnosis | Key Management Models | Porter, SWOT/TOWS, BCG, Ansoff, 7S, value chain | Framework diagnosis plus strategic choice |
 | Competitive advantage question | Porter/Magretta | Five Forces, value chain, tradeoffs | Competitive position deck |
@@ -37,6 +37,7 @@ Output type:
 
 - Pyramid Principle fits when the answer is known or can be stated as a hypothesis.
 - Issue tree / MECE fits when the question must be decomposed before a recommendation is credible.
+- McKinsey problem classification fits when the user has symptoms but not a precise issue question; classify restore / prevent / pursue before choosing a framework.
 - SWOT alone is never enough; use TOWS or strategy kernel to turn it into actions.
 - Porter fits when industry structure, competitive advantage, value chain, differentiation, or tradeoffs matter.
 - BCG and Ansoff fit portfolio and growth-choice conversations; avoid them for single-product diagnosis unless portfolio logic matters.
@@ -48,7 +49,7 @@ Output type:
 
 - Pyramid Principle + Porter: competitive recommendation.
 - Pyramid Principle + Playing to Win: strategic choice deck.
-- Issue tree + Bulletproof Problem Solving: ambiguous root-cause deck.
+- McKinsey problem classification + issue tree + Bulletproof Problem Solving: ambiguous root-cause or future-growth deck.
 - Key Management Models + TOWS: user starts with SWOT and needs action options.
 - Business Model Canvas + option comparison: new venture or GTM model decision.
 - Growth experiments + Traction: acquisition/channel investment decision.

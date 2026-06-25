@@ -74,6 +74,14 @@ Use these framework cards when selecting an analysis model. Frameworks are tools
 - Trap: exhaustive tree with no prioritization.
 - Consulting question: "Which few branches are most likely to change the answer?"
 
+## McKinsey Problem-Solving Spine
+
+- Use when: the user names McKinsey problem solving, has symptoms but no crisp issue question, or needs a consulting recommendation from messy business notes.
+- Inputs: problem type, current symptom, desired state, decision horizon, options, evidence, constraints.
+- Slide pattern: problem classification, issue question, prioritized issue tree, alternatives/scenario table, so-what synthesis.
+- Trap: using "McKinsey-style" as a label while skipping evidence, prioritization, and recommendation.
+- Consulting question: "What exact issue question must be solved, and what evidence would change our mind?"
+
 ## Option Comparison / Decision Table
 
 - Use when: leaders must choose among routes.

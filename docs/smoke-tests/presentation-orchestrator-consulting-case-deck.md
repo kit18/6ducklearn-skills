@@ -16,7 +16,7 @@ This is a synthetic, public-safe smoke fixture. It is not evidence about a real 
 - Audience: CEO, Head of Sales, Head of Product, RevOps.
 - Desired decision: Approve or reject a 90-day healthcare operations vertical GTM test.
 - Presentation type: Executive decision deck.
-- Time / slide target: 10 minutes, 11 slides.
+- Time / slide target: 10 minutes, 12 slides.
 - Source material: Synthetic messy notes above.
 - Constraints: No fabricated customer quotes, market size, CAC, revenue, or compliance claims.
 - Assumptions: Healthcare operations is a candidate vertical, not a proven segment.
@@ -25,8 +25,8 @@ This is a synthetic, public-safe smoke fixture. It is not evidence about a real 
 
 - Decision job: Growth/GTM investment decision.
 - Answer state: uncertain hypothesis with options tradeoff.
-- Primary framework: Playing to Win strategy cascade.
-- Support methods: Business Model Canvas, Traction/Bullseye, issue tree.
+- Primary framework: McKinsey problem-solving spine.
+- Support methods: Playing to Win strategy cascade, Business Model Canvas, Traction/Bullseye.
 - Why this route: Leadership must decide where to play and how to test a vertical motion without overcommitting.
 - Known evidence: directional CRM notes, sales feedback, early prospect calls.
 - Critical gaps: segment economics, compliance needs, implementation effort, repeatable pain, channel economics.
@@ -50,10 +50,21 @@ This is a synthetic, public-safe smoke fixture. It is not evidence about a real 
 
 | Framework | Role | Why it fits | Inputs needed | Slide pattern |
 |---|---|---|---|---|
-| Playing to Win | Primary | Forces where-to-play/how-to-win choices and tradeoffs | target vertical, winning logic, capabilities, systems | strategy cascade |
+| McKinsey problem-solving spine | Primary | Converts the growth symptom into an issue question, MECE drivers, alternatives, and a so-what recommendation | problem type, issue question, options, evidence, scenario variables | problem classification plus issue tree |
+| Playing to Win | Support | Forces where-to-play/how-to-win choices and tradeoffs | target vertical, winning logic, capabilities, systems | strategy cascade |
 | Business Model Canvas | Support | Tests whether the vertical motion has a coherent business model | segment, value prop, channel, resources, costs | canvas plus assumptions |
 | Traction/Bullseye | Support | Keeps channel testing disciplined and limited | candidate channels, test cost, signal metric | channel test shortlist |
-| Issue tree | Support | Breaks the slowdown into drivers before recommending action | conversion, sales cycle, urgency, implementation | root-cause tree |
+
+## Problem-Solving Spine
+
+- Problem type: restore current state and pursue ideal state.
+- Issue question: Should leadership approve a 90-day healthcare operations vertical GTM test to restore efficient growth without prematurely pivoting the company?
+- Hypotheses: healthcare urgency is higher; a narrower message can improve pipeline quality; compliance and implementation risk can be bounded by gates.
+- MECE branches: demand signal, sales economics, implementation burden, product/compliance fit, channel feasibility.
+- Alternatives: horizontal-only optimization, scoped vertical test, full healthcare pivot.
+- Scenario variables: conversion quality, sales-cycle change, implementation effort, compliance blockers, sales-team distraction.
+- Evidence that would change the answer: weak pain repeatability, long payback, blocking compliance requirements, no improvement in qualified pipeline.
+- So what / now what: approve a reversible test with explicit scale/stop gates rather than funding a full pivot.
 
 ## Options Considered
 
@@ -80,21 +91,33 @@ This is a synthetic, public-safe smoke fixture. It is not evidence about a real 
 4. The test should validate segment pain, channel economics, implementation burden, and compliance blockers.
 5. Leadership should approve a bounded test and reject both inaction and full pivot.
 
+## Modular PPT Map
+
+| Module | Audience need | Claim / job | Evidence or input | Visual pattern | Keep / cut |
+|---|---|---|---|---|---|
+| Decision brief | Leadership needs the answer first | Approve a scoped test, not a pivot | consulting POV | answer-first title and ask | Keep |
+| Audience context | Executives need shared urgency | Horizontal growth slowed and one vertical shows signal | messy source notes | situation/tension card | Keep |
+| Diagnosis | Team needs structure before action | Growth question splits into demand, sales motion, delivery burden | issue tree | root-cause tree | Keep |
+| Options | Leaders must compare paths | Scoped test beats horizontal-only and full pivot | options considered | 3-option decision table | Keep |
+| Execution | Approval requires feasibility | Use gates before repositioning | critical gaps | 90-day roadmap | Keep |
+| Risk and close | Skeptics need proof discipline | Preserve gaps and make ask reversible | red-team and simulation | risk matrix plus final ask | Keep |
+
 ## Slide Plan
 
-| # | Action-title slide | Slide job | Framework role | Evidence / input | Visual direction | Speaker note |
-|---|---|---|---|---|---|---|
-| 1 | Approve a 90-day healthcare vertical GTM test, not a pivot | State recommendation | Pyramid | POV card | Decision title plus ask | Start with the answer and boundary. |
-| 2 | Horizontal growth is slowing enough to warrant a focused test | Establish urgency | Issue tree | messy notes | Simple slowdown driver tree | We know enough to test, not enough to pivot. |
-| 3 | Healthcare operations is the strongest candidate because urgency appears higher | Name where to play | Playing to Win | early prospect signal | segment focus card | Present as hypothesis, not proof. |
-| 4 | The winning logic must prove pain repeatability, channel focus, and implementation feasibility | Define how to win | Playing to Win | route card | strategy cascade | The test is about learning the winning logic. |
-| 5 | The business model has four risky assumptions to validate | Expose assumptions | Business Model Canvas | evidence gaps | canvas mini-grid | This prevents sales enthusiasm from becoming strategy. |
-| 6 | A scoped test beats both horizontal-only optimization and a full pivot | Compare options | Option table | options considered | decision table | Make rejected paths explicit. |
-| 7 | Evidence is directional, so the deck should preserve gaps instead of pretending certainty | Protect trust | Evidence ledger | source labels | claim/evidence/gap table | This is the quality bar. |
-| 8 | The 90-day test should use scale/stop gates before permanent repositioning | Define execution | Traction/Bullseye | critical gaps | test roadmap | Gates keep the test reversible. |
-| 9 | The main risks are compliance ambiguity, product distraction, and small-sample bias | Address objections | Red-team | risk list | risk matrix | Handle executive objections before Q&A. |
-| 10 | The simulated decision room passes only if owners, gates, and proof gaps are explicit | Validate final readiness | Simulation validation | audience personas | decision-room simulation table | Rehearse sponsor, skeptic, operator, and evidence-reviewer reactions. |
-| 11 | Decision ask: approve the test team, gates, and first customer-discovery sprint | Close | Decision memo | revised recommendation | action list | End with the exact approval requested. |
+| # | Module | Action-title slide | Slide job | Framework role | Evidence / input | Visual direction | Speaker note |
+|---|---|---|---|---|---|---|---|
+| 1 | Decision brief | Approve a 90-day healthcare vertical GTM test, not a pivot | State recommendation | Pyramid | POV card | Decision title plus ask | Start with the answer and boundary. |
+| 2 | Audience context | Horizontal growth is slowing enough to warrant a focused test | Establish urgency | Issue tree | messy notes | Simple slowdown driver tree | We know enough to test, not enough to pivot. |
+| 3 | Recommendation | Healthcare operations is the strongest candidate because urgency appears higher | Name where to play | Playing to Win | early prospect signal | segment focus card | Present as hypothesis, not proof. |
+| 4 | Modular map | The deck uses only modules that help leaders understand, choose, and act | Show format logic | Modular Presentation | modular PPT map | module cards | Keep the format purposeful, not decorative. |
+| 5 | Diagnosis | The winning logic must prove pain repeatability, channel focus, and implementation feasibility | Define how to win | McKinsey issue tree + Playing to Win | route card | issue tree plus strategy cascade | The test is about learning the winning logic. |
+| 6 | Diagnosis | The business model has four risky assumptions to validate | Expose assumptions | Business Model Canvas | evidence gaps | canvas mini-grid | This prevents sales enthusiasm from becoming strategy. |
+| 7 | Options | A scoped test beats both horizontal-only optimization and a full pivot | Compare options | Option table | options considered | decision table | Make rejected paths explicit. |
+| 8 | Evidence ledger | Evidence is directional, so the deck should preserve gaps instead of pretending certainty | Protect trust | Evidence ledger | source labels | claim/evidence/gap table | This is the quality bar. |
+| 9 | Execution | The 90-day test should use scale/stop gates before permanent repositioning | Define execution | Traction/Bullseye | critical gaps | test roadmap | Gates keep the test reversible. |
+| 10 | Risk and close | The main risks are compliance ambiguity, product distraction, and small-sample bias | Address objections | Red-team | risk list | risk matrix | Handle executive objections before Q&A. |
+| 11 | Risk and close | The simulated decision room passes only if owners, gates, and proof gaps are explicit | Validate final readiness | Simulation validation | audience personas | decision-room simulation table | Rehearse sponsor, skeptic, operator, and evidence-reviewer reactions. |
+| 12 | Decision close | Decision ask: approve the test team, gates, and first customer-discovery sprint | Close | Decision memo | revised recommendation | action list | End with the exact approval requested. |
 
 ## Red-Team Review
 
@@ -136,4 +159,7 @@ This is a synthetic, public-safe smoke fixture. It is not evidence about a real 
 | Business Model Generation | https://www.strategyzer.com/library/business-model-generation | Exposed business model assumptions |
 | Traction/Bullseye | https://www.penguinrandomhouse.com/books/319121/traction-by-gabriel-weinberg-and-justin-mares/ | Kept channel testing bounded |
 | Pyramid Principle | https://www.barbaraminto.com/ | Made the recommendation answer-first |
+| The McKinsey Mind / 麥肯錫的專業思維 | https://www.mheducation.com/highered/mhp/product/mckinsey-mind.html | Added MECE issue logic, so-what synthesis, and recommendation communication discipline |
+| 麥肯錫問題分析與解決技巧 | https://www.eslite.com/product/1001191562738479 | Added problem classification, issue conversion, alternatives, and scenario-analysis discipline |
 | Say It With Charts | https://www.mckinsey.com/alumni/news-and-events/global-news/alumni-news/2023-05-remembering-gene-zelazny | Guided chart/exhibit discipline |
+| Modular Presentation | https://www.eslite.com/product/1001296512825378 | Added modular PPT map and module-level health check |

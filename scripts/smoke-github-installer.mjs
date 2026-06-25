@@ -37,6 +37,28 @@ try {
   if (!skillText.includes('name: smoke-presentation-orchestrator')) {
     throw new Error('install-codex did not rewrite the skill name with the requested prefix');
   }
+  if (!skillText.includes('modular-presentation-playbook.md')) {
+    throw new Error('presentation-orchestrator is missing the modular presentation reference link');
+  }
+  if (!skillText.includes('mckinsey-problem-solving-playbook.md')) {
+    throw new Error('presentation-orchestrator is missing the McKinsey problem-solving reference link');
+  }
+
+  const modularReference = await readFile(
+    join(target, 'smoke-presentation-orchestrator', 'references', 'modular-presentation-playbook.md'),
+    'utf8',
+  );
+  if (!modularReference.includes('Consulting PPT Module Library')) {
+    throw new Error('modular presentation reference is missing the consulting PPT module library');
+  }
+
+  const mckinseyReference = await readFile(
+    join(target, 'smoke-presentation-orchestrator', 'references', 'mckinsey-problem-solving-playbook.md'),
+    'utf8',
+  );
+  if (!mckinseyReference.includes('Problem-Solving Spine')) {
+    throw new Error('McKinsey problem-solving reference is missing the problem-solving spine');
+  }
 
   console.log(`GitHub npx installer smoke passed for ${installed.length} skills.`);
 } finally {

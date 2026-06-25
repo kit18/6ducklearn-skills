@@ -1,6 +1,6 @@
 ---
 name: presentation-orchestrator
-description: Use for consulting-style business storytelling, executive decision decks, strategy decks, founder or investor narratives, growth and GTM plans, business model decks, analyst-to-recommendation decks, and workshop readouts when the user needs rough inputs turned into a consulting POV, framework selection, evidence ledger, storyline, slide plan, red-team review, speaker notes, or a reusable deck harness.
+description: Use for consulting-style business storytelling, executive decision decks, strategy decks, founder or investor narratives, growth and GTM plans, business model decks, analyst-to-recommendation decks, workshop readouts, and modular consulting PPT formats when the user needs rough inputs turned into a consulting POV, framework selection, evidence ledger, storyline, slide plan, red-team review, speaker notes, reusable deck harness, or modular presentation structure.
 ---
 
 # Presentation Orchestrator
@@ -14,6 +14,8 @@ Use this skill to guide a user from rough business input to a consulting-style d
 - Selects one primary framework and at most two supporting methods.
 - Converts strategy, growth, GTM, product, business model, operating model, or data analysis into an executive storyline.
 - Produces action-title slide plans with evidence, visuals, speaker notes, and appendix candidates.
+- Uses modular presentation planning when the user needs reusable consulting PPT sections, fast deck assembly, or Chinese/Taiwan business presentation style.
+- Uses McKinsey-style problem classification, issue conversion, MECE issue trees, scenario options, and "so what" synthesis when the user names McKinsey problem-solving books or asks for consulting thinking.
 - Runs red-team and final simulation loops before final output so weak claims, missing "so what", likely objections, and decision-room failure modes are visible.
 
 ## Target jobs
@@ -42,6 +44,8 @@ Use this skill to guide a user from rough business input to a consulting-style d
    - Create a 3 to 5 section storyline with action-title slides.
    - Use `deck-output-template.md` for the deck brief, slide plan, speaker notes, and next actions.
    - Use `presentation-design-patterns.md` for consulting slide archetypes, visual rules, and chart choices.
+   - Use `modular-presentation-playbook.md` when the user asks for consulting PPT format, modular deck sections, fast deck assembly, or Chinese/Taiwan business presentation style.
+   - Use `mckinsey-problem-solving-playbook.md` when the question is ambiguous, McKinsey-style, scenario-driven, or needs problem classification before framework selection.
    - If the user asks for an actual deck file, use available document or slide tooling after the outline is stable.
 6. Red-team review.
    - Use `harness-loop-contract.md` to check unsupported claims, weak "so what", missing decision ask, framework misuse, audience objections, and what would change the answer.
@@ -67,7 +71,7 @@ Prefer 3 to 6 questions, not a long intake form. The highest-value questions are
 ## Method choice rules
 
 - For known recommendations, use Pyramid Principle plus an executive decision spine.
-- For uncertain hypotheses, use McKinsey-style issue trees, MECE, and Bulletproof Problem Solving.
+- For uncertain hypotheses, use McKinsey-style problem classification, issue trees, MECE, and Bulletproof Problem Solving.
 - For strategy/framework diagnosis, use Key Management Models, Porter/Magretta, HBR strategy, Playing to Win, SWOT/TOWS, Five Forces, value chain, BCG, Ansoff, 7S, or Business Model Canvas as appropriate.
 - For options tradeoffs, use option comparison, decision table, value/risk scoring, and explicit rejected paths.
 - For growth or GTM, use funnel, channel, customer segment, offer, lifecycle, traction, and experiment logic.
@@ -100,6 +104,8 @@ Use a more visual keynote/pitch style only when the main job is inspiration, fun
 - [consulting-storytelling-playbook.md](./references/consulting-storytelling-playbook.md)
 - [harness-loop-contract.md](./references/harness-loop-contract.md)
 - [presentation-design-patterns.md](./references/presentation-design-patterns.md)
+- [modular-presentation-playbook.md](./references/modular-presentation-playbook.md)
+- [mckinsey-problem-solving-playbook.md](./references/mckinsey-problem-solving-playbook.md)
 - [deck-output-template.md](./references/deck-output-template.md)
 
 ## Guardrails

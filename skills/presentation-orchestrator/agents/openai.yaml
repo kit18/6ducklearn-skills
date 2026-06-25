@@ -1,4 +1,4 @@
 interface:
   display_name: "Presentation Orchestrator"
   short_description: "Build consulting-style business stories"
-  default_prompt: "Use $presentation-orchestrator to turn rough business input into a consulting POV, framework selection, evidence ledger, red-team and simulation validation loops, and slide-ready output."
+  default_prompt: "Use $presentation-orchestrator to turn rough business input into a consulting POV, McKinsey-style problem-solving spine, framework selection, modular PPT map, evidence ledger, red-team and simulation validation loops, and slide-ready output."

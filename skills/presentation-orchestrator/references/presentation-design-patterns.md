@@ -26,11 +26,31 @@ Use this as the default for strategy, executive, growth, GTM, product, operating
    - each slide title says the takeaway
    - each slide has one job
    - each claim has evidence or an explicit gap
+   - each selected module has a clear purpose and can be reused or removed without breaking the whole deck
 5. Red-team and revision.
    - objections and weak claims are visible
    - revised recommendation handles the strongest risks
 
 This pattern is better than pure data storytelling for business decks because it forces a point of view, strategic choice, tradeoffs, and a decision ask before chart design.
+
+## Modular Consulting PPT Format
+
+Use `modular-presentation-playbook.md` when the user wants a deck format, not only a storyline. Build the deck from selected modules:
+
+1. Decision brief.
+2. Audience context.
+3. Route card.
+4. Consulting POV.
+5. Structured diagnosis.
+6. Evidence ledger.
+7. Options considered.
+8. Recommendation and tradeoffs.
+9. Execution plan.
+10. Risk and objection handling.
+11. Decision close.
+12. Appendix evidence.
+
+Keep only modules that help the audience understand, believe, choose, or act. For senior consulting decks, put the answer and decision ask before context unless the audience lacks shared context.
 
 ## Consulting Slide Archetypes
 
@@ -47,6 +67,7 @@ This pattern is better than pure data storytelling for business decks because it
 | Roadmap | Recommendation needs execution path | Sequence actions, owners, milestones |
 | Risk matrix | Decision has material downside | Show risks, likelihood, impact, mitigation |
 | Appendix evidence | Details may be challenged | Keep backup proof out of the main flow |
+| Modular section divider | A longer deck needs reusable sections | Mark a shift in deck job, not decoration |
 
 ## Visual Rules
 
