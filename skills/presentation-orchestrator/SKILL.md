@@ -44,6 +44,7 @@ Use this skill to guide a user from rough business input to a consulting-style d
    - Create a 3 to 5 section storyline with action-title slides.
    - Use `deck-output-template.md` for the deck brief, slide plan, speaker notes, and next actions.
    - Use `presentation-design-patterns.md` for consulting slide archetypes, visual rules, and chart choices.
+   - Use `presentation-diagram-source-catalog.md` to choose framework and diagram families from source-backed presentation, consulting, data-visualization, and business-model books instead of hardcoding favorite diagrams.
    - Use `modular-presentation-playbook.md` when the user asks for consulting PPT format, modular deck sections, fast deck assembly, or Chinese/Taiwan business presentation style.
    - Use `mckinsey-problem-solving-playbook.md` when the question is ambiguous, McKinsey-style, scenario-driven, or needs problem classification before framework selection.
    - If the user asks for an actual deck file, use available document or slide tooling after the outline is stable.
@@ -104,6 +105,7 @@ Use a more visual keynote/pitch style only when the main job is inspiration, fun
 - [consulting-storytelling-playbook.md](./references/consulting-storytelling-playbook.md)
 - [harness-loop-contract.md](./references/harness-loop-contract.md)
 - [presentation-design-patterns.md](./references/presentation-design-patterns.md)
+- [presentation-diagram-source-catalog.md](./references/presentation-diagram-source-catalog.md)
 - [modular-presentation-playbook.md](./references/modular-presentation-playbook.md)
 - [mckinsey-problem-solving-playbook.md](./references/mckinsey-problem-solving-playbook.md)
 - [deck-output-template.md](./references/deck-output-template.md)
@@ -112,6 +114,7 @@ Use a more visual keynote/pitch style only when the main job is inspiration, fun
 
 - Do not fabricate statistics, customer quotes, case studies, sources, or benchmark numbers.
 - Do not cite a methodology as if it proves the business claim; references explain structure, not truth.
+- Do not use reader popularity signals, review counts, bookstore rankings, or Amazon ratings as runtime criteria for choosing a diagram; those signals are only for catalog research and refresh.
 - Do not bury the recommendation after background unless the user explicitly asks for a teaching-style deck.
 - Do not create or send external presentation files through paid or connected tools without explicit approval.
 - When evidence is weak, produce a decision-needed or research-needed deck instead of pretending the conclusion is proven.

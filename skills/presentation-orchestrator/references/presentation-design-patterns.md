@@ -2,6 +2,8 @@
 
 Use this reference after choosing the consulting route and writing the POV. The default design is now a consulting business storytelling deck.
 
+Use `presentation-diagram-source-catalog.md` before drawing framework slides. The diagram library should be source-backed and decision-routed, not a hardcoded set of famous models.
+
 ## Best Default: Consulting Business Storytelling Deck
 
 Use this as the default for strategy, executive, growth, GTM, product, operating model, and business model presentations:
@@ -60,6 +62,7 @@ Keep only modules that help the audience understand, believe, choose, or act. Fo
 | SCQA opener | Audience needs context and urgency | Situation, complication, question, answer |
 | Issue tree | Problem is ambiguous | Show the decomposition and prioritized branch |
 | Framework diagnosis | User asks for SWOT, Porter, BCG, Ansoff, 7S, value chain, or canvas | Turn the model into an implication |
+| Source-backed diagram catalog | User asks for consulting style, business frameworks, best-practice slide diagrams, or non-generic PPT format | Route the decision job to a validated diagram family and cite the source anchor |
 | Option comparison | Leaders must choose among paths | Compare routes, tradeoffs, risks, and recommendation |
 | Decision table | Criteria are explicit | Show why one option wins |
 | Business Model Canvas | Business model or GTM model is the decision | Show model logic and riskiest assumptions |
